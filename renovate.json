@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "config:base",
+    ":dependencyDashboard"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": ["#"],
+      "versioningTemplate": "semver",
+      "datasourceTemplate": "docker",
+      "currentValueTemplate": "1.22",
+      "depNameTemplate": "nginx"
+    }
+  ]
+}
